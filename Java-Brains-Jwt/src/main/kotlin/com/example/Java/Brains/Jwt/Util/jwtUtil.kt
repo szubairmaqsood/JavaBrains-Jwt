@@ -9,7 +9,7 @@ import javax.security.auth.Subject.getSubject
 import kotlin.collections.HashMap
 
 @Service
-class JwtUtil {
+class jwtUtil {
     // Below here is the secret key
     private val SECRET_KEY = "secret"
 
