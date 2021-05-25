@@ -79,7 +79,7 @@ class jwtUtil {
      3.It is also checked that token is expired or not
      */
 
-    fun validateToken(token: String?, userDetails: UserDetails): Boolean? {
+    fun validateToken(token: String?, userDetails: UserDetails): Boolean {
         val username = extractUsername(token)
         return username == userDetails.username && !isTokenExpired(token)!!
     }
